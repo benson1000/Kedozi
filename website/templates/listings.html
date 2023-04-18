@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+
+{% block title %} | Property Listings {% endblock title %}
+{% block content %} 
+
+<section class="showcase-inner" class="py-5 text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1 class="display-4">No more waiting to get a Property!{{ name }}</h1>
+                <p class="lead">Grab a ideal Property you Love. Our Realtors are waiting to serve you only the Best</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Breadcrumb -->
+ <section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{url_for('views.home')}}">
+                        <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item active"> Browse Listings</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+ <!-- Listings -->
+ <!-- Listings -->
+ <section id="listings" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="static\images\home-4.jpg" alt="no img">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge badge-secondary text-white">$700000</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">14538 Chiromo Road</h4>
+                            <p>
+                                <i class="fas fa-map-marker text-secondary"></i>Westlands,
+                                Nairobi county, 047
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-th-large"></i> Sqft: 4500
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> Garage: 2
+                            </div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-bed"></i> Bedroom: 5</div>
+                            <div class="col-6">
+                                <i class="fas fa-bath"></i> Bathroom: 2</div>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-12">
+                                <i class="fas fa-user"></i>John Mburu</div>
+                        </div>
+                        <hr>
+                        <a href="{{url_for('auth.more_information')}}" class="btn btn-primary btn-block">More
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="static\images\home-5.jpg" alt="no img">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge badge-secondary text-white">$400000</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">0345 Kitise </h4>
+                            <p>
+                                <i class="fas fa-map-marker text-secondary"></i>Mwingi East,
+                                 Kitui county, 069
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-th-large"></i> Sqft: 2500
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> Garage: 1
+                            </div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-bed"></i> Bedroom: 3</div>
+                            <div class="col-6">
+                                <i class="fas fa-bath"></i> Bathroom: 2</div>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-12">
+                                <i class="fas fa-user"></i>Yvonne Mwikali</div>
+                        </div>
+                        <hr>
+                        <a href="{{url_for('auth.more_information')}}" class="btn btn-primary btn-block">More
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="static\images\home-7.jpg" alt="no img">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge badge-secondary text-white">$900000</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">0123 Muthaiga</h4>
+                            <p>
+                                <i class="fas fa-map-marker text-secondary"></i>Westlands,
+                                Nairobi county, 047
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-th-large"></i> Sqft: 4500
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> Garage: 3
+                            </div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-bed"></i> Bedroom: 6</div>
+                            <div class="col-6">
+                                <i class="fas fa-bath"></i> Bathroom: 2</div>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-12">
+                                <i class="fas fa-user"></i>John Mburu</div>
+                        </div>
+                        <hr>
+                        <a href="{{url_for('auth.more_information')}}" class="btn btn-primary btn-block">More
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="static\images\home-8.jpg" alt="no img">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge badge-secondary text-white">$1.2M</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">0123 Muthaiga</h4>
+                            <p>
+                                <i class="fas fa-map-marker text-secondary"></i>Westlands,
+                                Nairobi county, 047
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-th-large"></i> Sqft: 5000
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> Garage: 3
+                            </div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-bed"></i> Bedroom: 6</div>
+                            <div class="col-6">
+                                <i class="fas fa-bath"></i> Bathroom: 3</div>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-12">
+                                <i class="fas fa-user"></i>Irene wanjiru</div>
+                        </div>
+                        <hr>
+                        <a href="{{url_for('auth.more_information')}}" class="btn btn-primary btn-block">More
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="static\images\home-9.jpg" alt="no img">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge badge-secondary text-white">$500000</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">100 Muguga</h4>
+                            <p>
+                                <i class="fas fa-map-marker text-secondary"></i>Kabete,
+                                 Kiambu county, 021
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-th-large"></i> Sqft: 3500
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> Garage: 1
+                            </div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-bed"></i> Bedroom: 4</div>
+                            <div class="col-6">
+                                <i class="fas fa-bath"></i> Bathroom: 2</div>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-12">
+                                <i class="fas fa-user"></i>Irene wanjiru</div>
+                        </div>
+                        <hr>
+                        <a href="{{url_for('auth.more_information')}}" class="btn btn-primary btn-block">More
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card listing-preview">
+                    <img class="card-img-top" src="static\images\home-6.jpg" alt="no img">
+                    <div class="card-img-overlay">
+                        <h2>
+                            <span class="badge badge-secondary text-white">$450000</span>
+                        </h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="listing-heading text-center">
+                            <h4 class="text-primary">136, Mumbuni</h4>
+                            <p>
+                                <i class="fas fa-map-marker text-secondary"></i>Machakos town,
+                                Machakos county, 016
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-th-large"></i> Sqft: 3400
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-car"></i> Garage: 2
+                            </div>
+                        </div>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-6">
+                                <i class="fas fa-bed"></i> Bedroom: 4</div>
+                            <div class="col-6">
+                                <i class="fas fa-bath"></i> Bathroom: 2</div>
+                        </div>
+                        <hr>
+                        <div class="row py-2 text-secondary">
+                            <div class="col-12">
+                                <i class="fas fa-user"></i>Cate Kathiani</div>
+                        </div>
+                        <hr>
+                        <a href="{{url_for('auth.more_information')}}" class="btn btn-primary btn-block">More
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+        
+</section>
+
+    
+ 
+{% endblock content %}

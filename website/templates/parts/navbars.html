@@ -1,0 +1,48 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">
+            <img class="logo" src="static\images\logo.jpg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        {% if is_authenticated %}
+        <a class="nav-link" href="{{url_for('auth.dashboard')}}">
+            Welcome {{ first_name }} &nbsp;&nbsp;&nbsp;
+            <i class="fa fa-address-card"></i> Dashboard
+        </a>
+        <a href="/logout" class="nav-link">
+            <i class = "fas fa-sign-out-alt"></i>Logout
+        </a>
+        {% else %}
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <!--This is for the home page-->
+                <li>
+                    <a class="nav-link" href="{{url_for('views.home')}}">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="{{url_for('views.about')}}">About</a>
+                </li>
+                <!--This is for the property listings page-->
+                <li>
+                    <a class="nav-link" href="{{url_for('views.listings')}}">Property Listings</a>
+                </li>
+            </ul>
+            <!--This is for user registration and Login-->
+            <ul class="navbar-nav ml-auto">
+                <a class="nav-link" href="{{url_for('auth.register')}}">
+                    <i class="fas fa-user-plus"></i> Register
+                </a>
+                <a class="nav-link" href="{{url_for('auth.login')}}">
+                    <i class="fas fa-sign-in-alt"></i>Login
+                </a>
+                <!-- Default dropright button -->
+            </ul>
+        </div>
+        {% endif %}     
+    </div>
+</nav>

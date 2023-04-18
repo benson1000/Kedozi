@@ -1,0 +1,178 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: #eeee;
+}
+.btn-secondary {
+    color: #fff !important; 
+}
+
+img {
+    width: 100%; 
+}
+
+.logo {
+    width: 80px; 
+}
+
+.navbar {
+    opacity: 0.9;
+    text-transform: uppercase; 
+}
+.social a {
+    margin-right: 0.4rem; 
+}
+
+.showcase {
+
+    background: url('/static/images/index-home.jpg') no-repeat top center fixed;
+    position: relative ;
+    min-height: 650px;
+    color: #fff;
+    padding-top: 6rem; 
+}
+
+.showcase .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.8); 
+}
+
+.services {
+    background: url('/static/images/building.jpg') no-repeat top center fixed;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    background: rgba(32, 134, 107, 0.8); 
+}
+
+.showcase-inner {
+    background: url('/static/images/building.jpg') no-repeat top center fixed;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px; 
+}
+
+.showcase-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    background: rgba(32, 134, 107, 0.8);
+}
+
+.showcase-inner.showcase-search {
+    min-height: 270px; 
+}
+
+
+#work {
+    padding: 6rem 0; 
+}
+
+.registered {
+        margin-top: 35px;
+        font-weight: bold;
+        color: #000;
+}
+.registered a{
+        color: blue;
+        list-style: none;
+        text-decoration: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+}
+.registered a:hover{
+        color: purple;
+        list-style: none;
+        text-decoration: none;
+}
+
+
+.listing-preview a {
+    position: relative; 
+}
+  
+@media (max-width: 991px) {
+    .showcase {
+      padding-top: 4rem; 
+    }
+    .showcase h1 {
+        font-size: 40px; 
+    }
+    .hide-md-down {
+      display: none; 
+    } 
+}
+  
+@media (max-width: 768px) {
+    .showcase {
+      padding-top: 3rem; 
+    }
+      .showcase h1 {
+        font-size: 40px; 
+    }
+      .showcase p {
+        display: none; 
+    }
+    .top-bar {
+      text-align: center; 
+    }
+      .top-bar .social {
+        text-align: center !important; 
+    } 
+}
+  
+@media (max-width: 576px) {
+    .showcase h1 {
+      font-size: 30px; 
+    }
+    .showcase-inner h1 {
+      font-size: 40px;
+      color: #fff;
+    } 
+}
+
+.showcase-inner h1 {
+    font-size: 60px;
+    color: #fff;
+} 
+
+.services h3, p{
+    color: #fff;
+    line-height: 30px;
+
+}
+
+#about p{
+    color: black;
+    background-color: transparent;
+    font-weight: 400;
+
+}
+
+#team p{
+    color: black;
+}
+
+#top-bar p{
+    color: black;
+}
+
+#listings p {
+    color: black;
+}

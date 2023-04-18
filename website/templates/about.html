@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block title %} | About {% endblock title %}
+{% block content %} 
+<section class="showcase-inner" class="py-5 text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1 class="display-4">Our Services</h1>
+                <p class="lead">We promise to provide you the most
+                    Professional, Ethical and Informed Real Estate Services in the Industry!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Breadcrumb -->
+ <section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{url_for('views.home')}}">
+                        <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item active"> About</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<section id="about" class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Do you know why we are the best home search?</h2>
+                    <p class="lead" align ="justify">With the help of leadership and expertise, our company is able to
+                        achieve great heights. Each member of our team is as committed to bring you the best 
+                        possible experience as they are to make our company the best Real Estate Company in Kenya.
+                    </p>
+                    <img src='static\images\about.jpg' alt="">
+                    <p class="mt-4" align="justify">In today’s challenging Real Estate market, your choice of Real
+                        Estate Professional does matter! For a greater probability of success
+                        you need a dedicated professional, one who can guide you through the process and be counted on
+                        to protect your investment.
+                        Get to know us, knowledgeable, results-oriented professional. Our most important
+                        assets are
+                        honesty and integrity. At Kedozi, our aim is to protect your interests in terms of housing and rental 
+                        preferences. We sell houses to customers according to your requirements. We offer affordable housing.
+                    </p>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="static\images\employee.jpg" alt="Seller of the month">
+                    <div class="card-body">
+                        <h5 class="card-title">Star of the Month</h5>
+                        <h6 class="text-secondary">Yvonne Mwikali</h6>
+                        <p class="card-text" align="justify">I can help you with the best deals in the property listings
+                            and can accompany clients to property site and can discuss the conditions of sale. I an expert
+                            in directing you towards the best property within your desired value. Over 5 years of 
+                            negotiations experience, i go the distance to ensure that your best interests are protected.
+                            For best and hifg quality homes, kindly contact kedozi real estate. We are here to give you
+                            the best services. Our houses are found all over the country. We aim help people own a home
+                            with no stress of price as our houses are affordable and accessible to both income classes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Work -->
+   <section id="work" class="bg-dark text-white text-center">
+    <h3 class="display-4">We are here to serve you only the Best!</h3>
+    <h5>Why still waiting? Start your search and grab an ideal home you Love</h5>
+    <hr>
+    <a href="{{url_for('views.listings')}}" class="btn btn-secondary text-white btn-lg">View Our Listings</a>
+</section>
+
+<section id="team" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Our Team</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="static\images\nyanadua.jpg" alt="" class="rounded-circle mb-3">
+                <h4>Hellen Mureithi</h4>
+                <p class="text-success">
+                    <i class="fas fa-award text-success mb-3"></i>Realtor</p>
+                <hr>
+                <p><i class="fas fa-phone"></i>+254798765432</p>
+                <p><i class="fas fa-envelope-open"></i>Hellen@kedozirealestate.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="static\images\agent.jpg" alt="" class="rounded-circle mb-3">
+                <h4>John Mburu</h4>
+                <p class="text-success">
+                    <i class="fas fa-award text-success mb-3"></i>Realtor</p>
+                <hr>
+                <p><i class="fas fa-phone"></i>+254736789000</p>
+                <p><i class="fas fa-envelope-open"></i>mburu@kedozirealestate.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="static\images\final.jpg" alt="" class="rounded-circle mb-3">
+                <h4>Lilian wambui</h4>
+                <p class="text-success">
+                    <i class="fas fa-award text-success mb-3"></i>Realtor</p>
+                <hr>
+                <p><i class="fas fa-phone"></i>+254712345678</p>
+                <p><i class="fas fa-envelope-open"></i>wambui@kedozirealestate.com</p>
+            </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %} | Dashboard {% endblock %}
+
+{% block content %}
+<!-- Alerts -->
+{% include 'parts/alerts.html' %}
+
+<section class="showcase-inner" class="py-5 text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h1 class="display-4">{{ first_name }} Dashboard </h1>
+                <p class="lead">Manage all your inquired properties list here!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{url_for('views.home')}}">
+                        <i class="fas fa-home"></i>Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item active"> Dashboard</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section id="dashboard" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>
+                Welcome {{ first_name }}
+          </h2>
+                <p>Here are the property listings that you have inquired about</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Property</th>
+                <th></th>
+              </tr>
+            </thead>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
